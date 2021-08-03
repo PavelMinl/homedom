@@ -1,0 +1,30 @@
+.aside {
+    background-color: #222;
+    min-height: 79px;
+    display: flex;
+}
+.aside-logo {
+    display: flex;
+}
+.aside-logo-network {
+    color: #222;
+    background-color: #ffffff;
+    margin-left: 8px;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.aside-logo-network:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+}
+
+.aside-brand-paragraf {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fbfbfb;
+}
