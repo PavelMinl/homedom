@@ -781,6 +781,13 @@ body {
   border: 1px solid #eaeaea;
 }
 
+.price-buy-line {
+  width: 63px;
+  border-style: solid;
+  border-color: #ef5b70;
+  border-width: 3px 0 0 0;
+}
+
 .price-buy-woman {
   font-weight: 300;
   font-size: 14px;
@@ -1078,6 +1085,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.shop-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .shop-card-block {
