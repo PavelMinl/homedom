@@ -765,6 +765,75 @@ body {
   display: none;
 }
 
+.shop-catalog-trend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  outline: none;
+  border: none;
+  list-style: none;
+  z-index: 200;
+}
+
+.shop-catalog-trend-summery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 27px;
+}
+
+.shop-catalog-trend:hover .shop-filter-text {
+  color: #f26376;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.shop-catalog-trend:hover .shop-filter-svg {
+  fill: #f26376;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.shop-catalog-trend ::-webkit-details-marker {
+  display: none;
+}
+
+.shop-catalog-trend[open] > summary {
+  color: plum;
+  outline: none;
+  border: none;
+}
+
+.shop-catalog-trend-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop-catalog-trend-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-box-shadow: 6px 19px 27px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 19px 27px rgba(0, 0, 0, 0.21);
+  background-color: #fff;
+  padding: 7px 25px 6px 9px;
+  -webkit-animation: shop-filter-content 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: shop-filter-content 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.shop-catalog-trend-size {
+  font-size: 14px;
+  line-height: 16px;
+  color: #6f6e6e;
+  margin-left: 9px;
+}
+
 .price-buy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1176,6 +1245,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .shop-catalog-left {
@@ -1195,6 +1267,7 @@ body {
 .shop-catalog-down-svg {
   fill: #6f6e6e;
   margin-left: 10px;
+  margin-top: 7px;
 }
 
 .shop-button {

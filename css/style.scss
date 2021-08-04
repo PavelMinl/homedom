@@ -374,6 +374,54 @@ $svg: #222;
 .example-img-none {
     display: none;
 }
+.shop-catalog-trend {
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    border: none;
+    list-style: none;
+    z-index: 200;
+    &-summery {
+        display: flex;
+        margin-right: 27px;
+    }
+    &:hover .shop-filter-text {
+        color: $paint;
+        transition: 0.5s;
+    }
+    &:hover .shop-filter-svg {
+        fill: $paint;
+        transition: 0.5s;
+    }
+
+    & ::-webkit-details-marker {
+        display: none;
+    }
+
+    &[open] > summary {
+        color: plum;
+        outline: none;
+        border: none;
+    }
+    &-order {
+        display: flex;
+    }
+    &-label {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        box-shadow: 6px 19px 27px rgba(0, 0, 0, 0.21);
+        background-color: #fff;
+        padding: 7px 25px 6px 9px;
+        animation: shop-filter-content 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    }
+    &-size {
+        font-size: 14px;
+        line-height: 16px;
+        color: #6f6e6e;
+        margin-left: 9px;
+    }
+}
 .price-buy {
     display: flex;
     flex-direction: column;
@@ -657,6 +705,7 @@ $svg: #222;
     &-right {
         margin-right: 36%;
         display: flex;
+        align-items: center;
     }
     &-left {
         margin-left: 3%;
@@ -673,6 +722,7 @@ $svg: #222;
         &-svg {
             fill: #6f6e6e;
             margin-left: 10px;
+            margin-top: 7px;
         }
     }
 }
