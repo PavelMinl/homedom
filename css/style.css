@@ -475,6 +475,13 @@ body {
   transition: 0.5s;
 }
 
+.adress-button:active {
+  background-color: #636361;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .adress-wall {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,6 +533,14 @@ body {
   background-color: #ffffff;
   color: #f16d7f;
   border: 3px solid #f16d7f;
+}
+
+.adress-check:active {
+  background-color: #636361;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 3px solid #636361;
 }
 
 .adress-checkout {
@@ -687,6 +702,13 @@ body {
   transition: 0.5s;
 }
 
+.basket-buttom-card:active {
+  background-color: #636361;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .basket-rotate,
 .basket-img {
   display: block;
@@ -789,6 +811,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-right: 27px;
+}
+
+.shop-catalog-trend-summery:hover .shop-catalog-down {
+  color: #f26376;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.shop-catalog-trend-summery:hover .shop-catalog-down-svg {
+  fill: #f26376;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .shop-catalog-trend:hover .shop-filter-text {
@@ -1131,8 +1165,9 @@ body {
 }
 
 .register-button:active {
-  background: #aaf3bd;
-  color: #f16d7f;
+  background: #636361;
+  color: #fff;
+  border: 1px solid #636361;
 }
 
 .shop-menu {
@@ -1350,6 +1385,14 @@ body {
   transition: 0.5s;
 }
 
+.price-button-cart:active {
+  border: 1px solid #636361;
+  background-color: #636361;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .price-button-cart:hover .price-paragraf-card {
   color: #fff;
   -webkit-transition: 0.5s;
@@ -1550,6 +1593,14 @@ details > summary {
   color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.shop-button-click:active {
+  background-color: #636361;
+  border: 1px solid #636361;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .shop-card-block-price {
@@ -1777,6 +1828,14 @@ details > summary {
   border: 1px solid #f16d7f;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.mailing-subscribe-button:active {
+  border: 1px solid #636361;
+  background-color: #636361;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .mailing-subscribe-paragraf {

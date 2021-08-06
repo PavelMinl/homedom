@@ -1,9 +1,8 @@
 /* отсылки */
 $paint: #f26376;
 $svg: #222;
-
-/* примеси */
-@mixin gender {
+$click: #636361;
+$text-button: #fff /* примеси */ @mixin gender {
     background-size: auto;
     width: 360px;
     height: 260px;
@@ -153,6 +152,11 @@ $svg: #222;
             color: white;
             transition: 0.5s;
         }
+        &:active {
+            background-color: $click;
+            color: $text-button;
+            transition: 0.4s;
+        }
     }
     &-wall {
         display: flex;
@@ -185,6 +189,12 @@ $svg: #222;
             background-color: #ffffff;
             color: #f16d7f;
             border: 3px solid #f16d7f;
+        }
+        &:active {
+            background-color: $click;
+            color: $text-button;
+            transition: 0.5s;
+            border: 3px solid $click;
         }
     }
     &-checkout {
@@ -308,6 +318,11 @@ $svg: #222;
                 color: white;
                 transition: 0.5s;
             }
+            &:active {
+                background-color: $click;
+                color: $text-button;
+                transition: 0.4s;
+            }
         }
     }
 }
@@ -384,6 +399,14 @@ $svg: #222;
     &-summery {
         display: flex;
         margin-right: 27px;
+        &:hover .shop-catalog-down {
+            color: $paint;
+            transition: 0.5s;
+        }
+        &:hover .shop-catalog-down-svg {
+            fill: $paint;
+            transition: 0.5s;
+        }
     }
     &:hover .shop-filter-text {
         color: $paint;
@@ -620,8 +643,10 @@ $svg: #222;
             border: 1px solid $paint;
         }
         &:active {
-            background: #aaf3bd;
-            color: #f16d7f;
+            background: $click;
+            color: $text-button;
+            border: 1px solid $click;
+            transition: 0.4s;
         }
     }
 }
@@ -771,12 +796,18 @@ $svg: #222;
         background-color: $paint;
         transition: 0.5s;
     }
+    &:active {
+        border: 1px solid $click;
+        background-color: $click;
+        color: $text-button;
+        transition: 0.4s;
+    }
     &:hover .price-paragraf-card {
-        color: #fff;
+        color: $text-button;
         transition: 0.5s;
     }
     &:hover .price-svg-card {
-        fill: #fff;
+        fill: $text-button;
         transition: 0.5s;
     }
 }
@@ -923,12 +954,19 @@ details > summary {
     background-color: white;
     padding: 15px 40px;
     border: 1px solid $paint;
+    &:hover {
+        background-color: #f16d7f;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+    &:active {
+        background-color: $click;
+        border: 1px solid $click;
+        color: $text-button;
+        transition: 0.4s;
+    }
 }
-.shop-button-click:hover {
-    background-color: #f16d7f;
-    color: #ffffff;
-    transition: 0.5s;
-}
+
 .shop-card-block-price {
     color: #f16d7f;
     font-size: 16px;
@@ -1083,6 +1121,12 @@ details > summary {
         border-radius: 0 25px 25px 0;
         border: 1px solid #f16d7f;
         transition: 0.5s;
+    }
+    &:active {
+        border: 1px solid $click;
+        background-color: $click;
+        color: $text-button;
+        transition: 0.4s;
     }
 }
 .mailing-subscribe-paragraf {
