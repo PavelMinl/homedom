@@ -2,7 +2,10 @@
 $paint: #f26376;
 $svg: #222;
 $click: #636361;
-$text-button: #fff /* примеси */ @mixin gender {
+$text-button: #fff;
+
+/* примеси */
+@mixin gender {
     background-size: auto;
     width: 360px;
     height: 260px;
@@ -691,7 +694,7 @@ $text-button: #fff /* примеси */ @mixin gender {
             margin-top: 128px;
         }
         &:hover {
-            box-shadow: rgba(58, 56, 56, 0.86);
+            box-shadow: 0 0 0 rgba(58, 56, 56, 0.86);
         }
         &:hover .shop-over {
             opacity: 1;
@@ -778,6 +781,12 @@ $text-button: #fff /* примеси */ @mixin gender {
         &:hover {
             background: #f16d7f;
             border: 1px solid #f16d7f;
+            transition: 0.5s;
+        }
+        &:active {
+            background-color: $click;
+            border: 1px solid $click;
+            color: $text-button;
         }
     }
 }

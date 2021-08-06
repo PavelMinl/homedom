@@ -1168,6 +1168,8 @@ body {
   background: #636361;
   color: #fff;
   border: 1px solid #636361;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .shop-menu {
@@ -1233,8 +1235,8 @@ body {
 }
 
 .shop-card-block:hover {
-  -webkit-box-shadow: rgba(58, 56, 56, 0.86);
-          box-shadow: rgba(58, 56, 56, 0.86);
+  -webkit-box-shadow: 0 0 0 rgba(58, 56, 56, 0.86);
+          box-shadow: 0 0 0 rgba(58, 56, 56, 0.86);
 }
 
 .shop-card-block:hover .shop-over {
@@ -1356,6 +1358,14 @@ body {
 .shop-button-cart:hover {
   background: #f16d7f;
   border: 1px solid #f16d7f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.shop-button-cart:active {
+  background-color: #636361;
+  border: 1px solid #636361;
+  color: #fff;
 }
 
 .price-button-cart {
