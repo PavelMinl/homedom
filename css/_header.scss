@@ -69,6 +69,13 @@ body {
     line-height: 17px;
     color: #6f6e6e;
     margin: 11px 0 11px 20px;
+    &-link {
+      text-decoration: none;
+      color: #6f6e6e;
+      &:hover {
+        color: #f26376;
+      }
+    }
   }
   &-svg {
     fill: #575757;
