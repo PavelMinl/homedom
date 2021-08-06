@@ -453,7 +453,7 @@ body {
   margin: 0 0 21px 0;
   font-size: 13px;
   line-height: 16px;
-  padding-left: 17px;
+  padding: 0 17px;
   border: 1px solid #a4a4a4;
 }
 
@@ -843,6 +843,10 @@ body {
   margin-left: 9px;
 }
 
+.shop-catalog-trend-size:hover {
+  color: #f26376;
+}
+
 .price-buy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1124,6 +1128,11 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid #f26376;
+}
+
+.register-button:active {
+  background: #aaf3bd;
+  color: #f16d7f;
 }
 
 .shop-menu {
@@ -1432,6 +1441,10 @@ details > summary {
   line-height: 17px;
   color: #6f6e6e;
   text-decoration: none;
+}
+
+.shop-filter-link:hover {
+  color: #f26376;
 }
 
 .shop-filter-item {

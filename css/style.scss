@@ -136,7 +136,7 @@ $svg: #222;
         margin: 0 0 21px 0;
         font-size: 13px;
         line-height: 16px;
-        padding-left: 17px;
+        padding: 0 17px;
         border: 1px solid #a4a4a4;
     }
     &-button {
@@ -420,6 +420,9 @@ $svg: #222;
         line-height: 16px;
         color: #6f6e6e;
         margin-left: 9px;
+        &:hover {
+            color: $paint;
+        }
     }
 }
 .price-buy {
@@ -615,6 +618,10 @@ $svg: #222;
             color: $paint;
             transition: 0.5s;
             border: 1px solid $paint;
+        }
+        &:active {
+            background: #aaf3bd;
+            color: #f16d7f;
         }
     }
 }
@@ -833,6 +840,9 @@ details > summary {
     line-height: 17px;
     color: #6f6e6e;
     text-decoration: none;
+    &:hover {
+        color: $paint;
+    }
 }
 .shop-filter-item {
     list-style-type: none;
